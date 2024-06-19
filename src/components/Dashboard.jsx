@@ -14,7 +14,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const token = 'BQAJGmNKWG8HxXAnFlY6WYkbY8_vszDps5jkdK3YSFdwGGXfLPKE8jPwfzGUR3MT6cm40hbvyq-LL-Bc8xWV6hITOAFqlgyOgD7lzzdhy35nLrc_FuqQ4VCnM4vsYHnPKMxYOMSC043immVRsngPJGc3p8ErCyVpcDzq1IUjssyW68HU3D6zjtoeC5xSXnnfXj3KlXqaN7jqBUW83OVjgg'; 
+        const token = 'YOUR_SPOTIFY_API_TOKEN'; 
         const result = await fetchIndianSongs2023(token);
         const songs = result.tracks.items.slice(0, 20); 
         setData(songs);
